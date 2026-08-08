@@ -1,0 +1,308 @@
+---
+permalink: /404.html
+---
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MaTin & Mahak | لاو ابدی</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Vazirmatn', sans-serif;
+    background: linear-gradient(135deg, #1a0a1f 0%, #2d1b3d 40%, #1a0a1f 100%);
+    min-height: 100vh;
+    color: #fff;
+    overflow-x: hidden;
+    position: relative;
+}
+
+/* افکت قلب‌های شناور */
+.hearts {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 0;
+    overflow: hidden;
+}
+
+.heart {
+    position: absolute;
+    font-size: 20px;
+    color: rgba(255, 105, 180, 0.25);
+    animation: float 12s linear infinite;
+}
+
+@keyframes float {
+    0% { transform: translateY(100vh) rotate(0deg); opacity: 0; }
+    10% { opacity: 0.6; }
+    90% { opacity: 0.6; }
+    100% { transform: translateY(-10vh) rotate(360deg); opacity: 0; }
+}
+
+.container {
+    position: relative;
+    z-index: 1;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.header {
+    margin-bottom: 40px;
+}
+
+.heart-icon {
+    font-size: 60px;
+    color: #ff4d94;
+    animation: pulse 1.8s ease-in-out infinite;
+    text-shadow: 0 0 30px rgba(255, 77, 148, 0.6);
+}
+
+@keyframes pulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.15); }
+}
+
+h1 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    margin: 15px 0 8px;
+    background: linear-gradient(90deg, #ff6b9d, #ffb6c1, #ff6b9d);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: 1px;
+}
+
+.subtitle {
+    font-size: 1.15rem;
+    color: #e0b0c8;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+.date-box {
+    background: rgba(255, 255, 255, 0.07);
+    border: 1px solid rgba(255, 105, 180, 0.25);
+    border-radius: 20px;
+    padding: 18px 25px;
+    margin: 25px auto;
+    display: inline-block;
+    backdrop-filter: blur(10px);
+}
+
+.date-box span {
+    color: #ff9ec8;
+    font-weight: 600;
+}
+
+.countdown {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin: 40px 0;
+}
+
+.time-box {
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 105, 180, 0.3);
+    border-radius: 18px;
+    padding: 22px 18px;
+    min-width: 110px;
+    backdrop-filter: blur(12px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.time-box:hover {
+    transform: translateY(-6px);
+    border-color: #ff6b9d;
+}
+
+.number {
+    font-size: 2.6rem;
+    font-weight: 700;
+    color: #fff;
+    display: block;
+    text-shadow: 0 0 15px rgba(255, 105, 180, 0.5);
+}
+
+.label {
+    font-size: 0.95rem;
+    color: #e0b0c8;
+    margin-top: 6px;
+    font-weight: 400;
+}
+
+.names {
+    margin: 50px 0 30px;
+}
+
+.couple {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.person {
+    background: rgba(255, 255, 255, 0.06);
+    border-radius: 20px;
+    padding: 25px 30px;
+    border: 1px solid rgba(255, 105, 180, 0.2);
+    min-width: 180px;
+}
+
+.person .name {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #ff8eb8;
+    margin-bottom: 8px;
+}
+
+.person .id {
+    font-size: 0.95rem;
+    color: #c9a0b8;
+    direction: ltr;
+}
+
+.and {
+    font-size: 2rem;
+    color: #ff4d94;
+}
+
+.footer {
+    margin-top: 50px;
+    font-size: 0.95rem;
+    color: #b88aa8;
+    line-height: 1.8;
+}
+
+.footer .forever {
+    color: #ff6b9d;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+@media (max-width: 500px) {
+    h1 { font-size: 2.1rem; }
+    .number { font-size: 2rem; }
+    .time-box { min-width: 90px; padding: 18px 12px; }
+}
+</style>
+</head>
+<body>
+
+<div class="hearts" id="hearts"></div>
+
+<div class="container">
+    <div class="header">
+        <div class="heart-icon">♥</div>
+        <h1>MaTin & Mahak</h1>
+        <p class="subtitle">روزشمار پیوندتون </p>
+        
+        <div class="date-box">
+            تاریخ پیوست: <span>۱۴۰۵/۰۴/۱۳</span> — ساعت <span>۱۱:۲۷:۲۱</span>
+        </div>
+    </div>
+
+    <div class="countdown" id="countdown">
+        <div class="time-box">
+            <span class="number" id="days">00</span>
+            <span class="label">روز</span>
+        </div>
+        <div class="time-box">
+            <span class="number" id="hours">00</span>
+            <span class="label">ساعت</span>
+        </div>
+        <div class="time-box">
+            <span class="number" id="minutes">00</span>
+            <span class="label">دقیقه</span>
+        </div>
+        <div class="time-box">
+            <span class="number" id="seconds">00</span>
+            <span class="label">ثانیه</span>
+        </div>
+    </div>
+
+    <div class="names">
+        <div class="couple">
+            <div class="person">
+                <div class="name">MaTin</div>
+                <div class="id">@TeraveI</div>
+            </div>
+            <div class="and">♥</div>
+            <div class="person">
+                <div class="name">Mahak</div>
+                <div class="id">@Mahak_hadizadeh</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p class="forever">برای همیشه کنار هم باشید...</p>
+        <p>یادگاری از طرف امیرحدادی واسه شما دوستانم</p>
+    </div>
+</div>
+
+<script>
+// تاریخ شروع: ۱۴۰۵/۰۴/۱۳ ساعت ۱۱:۲۷:۲۱ ≈ ۴ جولای ۲۰۲۶
+const startDate = new Date(2026, 6, 4, 11, 27, 21); // ماه در JS از 0 شروع می‌شه
+
+function updateCountdown() {
+    const now = new Date();
+    const diff = now - startDate;
+
+    if (diff < 0) {
+        document.getElementById('days').textContent = '00';
+        document.getElementById('hours').textContent = '00';
+        document.getElementById('minutes').textContent = '00';
+        document.getElementById('seconds').textContent = '00';
+        return;
+    }
+
+    const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+
+    document.getElementById('days').textContent = String(days).padStart(2, '0');
+    document.getElementById('hours').textContent = String(hours).padStart(2, '0');
+    document.getElementById('minutes').textContent = String(minutes).padStart(2, '0');
+    document.getElementById('seconds').textContent = String(seconds).padStart(2, '0');
+}
+
+// قلب‌های شناور
+function createHearts() {
+    const container = document.getElementById('hearts');
+    for (let i = 0; i < 25; i++) {
+        const heart = document.createElement('div');
+        heart.className = 'heart';
+        heart.innerHTML = '♥';
+        heart.style.left = Math.random() * 100 + 'vw';
+        heart.style.animationDuration = (8 + Math.random() * 10) + 's';
+        heart.style.animationDelay = Math.random() * 8 + 's';
+        heart.style.fontSize = (14 + Math.random() * 18) + 'px';
+        container.appendChild(heart);
+    }
+}
+
+createHearts();
+updateCountdown();
+setInterval(updateCountdown, 1000);
+</script>
+</body>
+          </html>
